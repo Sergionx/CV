@@ -1,154 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Sergio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Sergio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <div class="name">
-      <h1>Sergio Suárez</h1>
-      <h2>Full Stack Developer</h2>
-    </div>
-
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="#hero">Inicio</a>
-        </li>
-
-        <li>
-          <a href="#aboutMe">Sobre mí</a>
-        </li>
-  
-        <li>
-          <a href="#skills">Habilidades</a>
-        </li>
-  
-        <li>
-          <a href="#experience">Experiencia</a>
-        </li>
-  
-        <li>
-          <a href="#contactMe">Contáctame</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="nav-responsive" onclick="togleMenu()">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-  </header>
-  
-  <main>
-    <section class="hero">
-      <div class="slider">
-        <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-  
-          <!-- Slides -->
-          <div class="slide first">
-            <img src="./assets/1.png" alt="">
-          </div>
-  
-          <div class="slide">
-            <img src="./assets/2.png" alt="">
-          </div>
-  
-          <div class="slide">
-            <img src="./assets/1.png" alt="">
-          </div>
-  
-          <div class="slide">
-            <img src="./assets/1.png" alt="">
-          </div>
-  
-          <!-- Automatic navigation -->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-  
-          <!-- Manual navigation -->
-          <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
-        </div>
+  <body>
+    <header class="header">
+      <div class="name">
+        <h1>Sergio Suárez</h1>
+        <h2>Full Stack Developer</h2>
       </div>
-    </section>
 
-    <section class="about-me">
-      <div class="contenido">
-        <h1>Sobre Mí</h1>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#hero">Inicio</a>
+          </li>
 
-        <div class="info">
-          <p><span>Hola, soy Sergio Suárez.</span> 
-            Me encanta el helado y estudio en la Universidad Metropolitana Ingeniería en Sistemas.
-            Decidí estudiar esta carreara porque quiero construir el futuro y me parece que la programación es la mejor herramienta para hacerlo. 
-            A largo plazo me gustaria viajar por el mundo, hacer a mi familia feliz y trabajar donde pueda traer innovación al mundo.</p>
-            <img src="./assets/Sergio.jpg">
+          <li>
+            <a href="#aboutMe">Sobre mí</a>
+          </li>
+
+          <li>
+            <a href="#skills">Habilidades</a>
+          </li>
+
+          <li>
+            <a href="#experience">Experiencia</a>
+          </li>
+
+          <li>
+            <a href="#contactMe">Contáctame</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-responsive" onclick="togleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+
+            <!-- Slides -->
+            <div class="slide first">
+              <img src="./assets/1.png" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="./assets/aether.png" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="./assets/Sergio.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="./assets/1.png" alt="" />
+            </div>
+
+            <!-- Automatic navigation -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+
+            <!-- Manual navigation -->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <h2>Gustos</h2>
-        <div class="contenedor-intereses">
-          <div class="interes">
-            <i class="fa-solid fa-gamepad"></i>
-            <span>Videojuegos</span>
+      <section class="about-me">
+        <div class="contenido">
+          <h1>Sobre Mí</h1>
+
+          <div class="info">
+            <p>
+              <span>Hola, soy Sergio Suárez.</span> Me encanta el helado y
+              estudio en la Ingeniería en Sistemas Universidad Metropolitana .
+              Decidí estudiar esta carreara porque quiero construir el futuro y
+              me parece que la programación es la mejor herramienta para
+              hacerlo. A largo plazo me gustaria viajar por el mundo, hacer a mi
+              familia feliz y trabajar donde pueda traer innovación al mundo.
+            </p>
+            <img src="./assets/Sergio.jpg" alt="Sergio bello y sexy" />
           </div>
 
-          <div class="interes">
-            <i class="fa-solid fa-headphones"></i>
-            <span>Musica</span>
-          </div>
+          <h2>Gustos</h2>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>Videojuegos</span>
+            </div>
 
-          <div class="interes">
-            <i class="fa-solid fa-plane"></i>
-            <span>Viajar</span>
-          </div>
+            <div class="interes">
+              <i class="fa-solid fa-headphones"></i>
+              <span>Musica</span>
+            </div>
 
-          <div class="interes">
-            <i class="fa-solid fa-dumbbell"></i>
-            <span>Gym</span>
-          </div>
+            <div class="interes">
+              <i class="fa-solid fa-plane"></i>
+              <span>Viajar</span>
+            </div>
 
-          <div class="interes">
-            <i class="fa-solid fa-book"></i>
-            <span>Leer</span>
-          </div>
+            <div class="interes">
+              <i class="fa-solid fa-dumbbell"></i>
+              <span>Gym</span>
+            </div>
 
-          <div class="interes">
-            <i class="fa-solid fa-heart"></i>
-            <span>Mi novia</span>
-          </div>
+            <div class="interes">
+              <i class="fa-solid fa-book"></i>
+              <span>Leer</span>
+            </div>
 
+            <div class="interes">
+              <i class="fa-solid fa-heart"></i>
+              <span>Mi novia</span>
+            </div>
+          </div>
         </div>
-    </div>
-    </section>
+      </section>
 
-    <section class="skills">
-      Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web. Estudio el segundo año de Ingeniería de Sistemas en la Unimet.
-      Me especializo en el desarrollo de aplicaciones web con tecnologías como React, Angular, Node.js, Express, MongoDB, MySQL, etc. 
-      A corto plazo mis metas son graduarme de la universidad y conseguir un ascenso en mi trabajo de programador.
-    </section>
-  </main>
+      <section class="experience">
+        <h1>Experiencia</h1>
   
-  <footer>
-    
-  </footer>
+        <div class="proyectos">
+          <div class="proyecto">
+            <div>
+              <h3>Aether ticket</h3>
+              <span class="casa">Tecnologías: Angular, TailwindCSS, Firebase</span>
+              <p class="fecha">Fecha: 2022 - Ahora</p>
+              <a href="https://aether-qa.web.app/" target="_blank">
+                Proyecto
+              </a>
+            </div>
 
-  <script src="./main.js"></script> 
-</body>
+            <img src="./assets/aether.png">
+          </div>
+
+          <div class="proyecto">
+            <div>
+              <h3>Aether ticket</h3>
+              <span class="casa">Tecnologías: Angular, TailwindCSS, Firebase</span>
+              <p class="fecha">Fecha: 2022 - Ahora</p>
+              <a href="https://aether-qa.web.app/" target="_blank"> 
+                Proyecto
+              </a>
+            </div>
+
+            <img src="./assets/aether.png">
+          </div>
+
+          <div class="proyecto">
+            <div>
+              <h3>Aether ticket</h3>
+              <span class="casa">Tecnologías: Angular, TailwindCSS, Firebase</span>
+              <p class="fecha">Fecha: 2022 - Ahora</p>
+              <a href="https://aether-qa.web.app/" target="_blank">
+                Proyecto
+              </a>
+            </div>
+
+            <img src="./assets/aether.png">
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        Soy un desarrollador web full stack con experiencia en el desarrollo de
+        aplicaciones web. Estudio el segundo año de Ingeniería de Sistemas en la
+        Unimet. Me especializo en el desarrollo de aplicaciones web con
+        tecnologías como React, Angular, Node.js, Express, MongoDB, MySQL, etc.
+        A corto plazo mis metas son graduarme de la universidad y conseguir un
+        ascenso en mi trabajo de programador.
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
