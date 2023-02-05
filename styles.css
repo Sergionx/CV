@@ -295,15 +295,17 @@ body{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}0
-
-.experience .proyectos .proyecto div h3{
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 500;
+  justify-content: center;
   color: #fff;
-  margin: 0;
 }
 
+.experience .proyectos .proyecto div h3{
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
 
 .experience .proyectos .proyecto div a{
   text-decoration: none;
@@ -312,10 +314,35 @@ body{
   font-weight: 500;
 }
 
+.experience .proyectos .proyecto div a:hover{
+  color: #39bcad;
+  text-decoration: underline;
+}
+
+.experience .proyectos .proyecto div .descripcion{
+  margin: 0;
+  text-align: justify;
+}
+
+.experience .proyectos .proyecto div .descripcion span{
+  color: #bc3948;
+}
+
+.experience .proyectos .proyecto div .descripcion span:hover{
+  color: #39bcad;
+}
+
+.experience .proyectos .proyecto div p{
+  margin: 0;
+}
+
 .experience .proyectos .proyecto img{
   width: 100%;
   height: auto;
+  display: flex;
+  
   max-width: 40rem;
+  max-height: 20rem;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -371,7 +398,7 @@ body{
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1000px){
   .experience{
     padding: 0 2rem 0 2rem;
   }
@@ -380,13 +407,12 @@ body{
     gap: 1rem;
   }
   .experience .proyectos .proyecto div{
-    gap: 0.5rem;
+    gap: 1rem;
   }
   .experience .proyectos .proyecto div h3{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .experience .proyectos .proyecto div a{
-    font-size: 1rem;
   }
   .experience .proyectos .proyecto img{
     max-width: 25rem;
