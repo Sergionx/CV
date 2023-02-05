@@ -218,7 +218,7 @@
     <footer class="contact-me">
       <h1>Contáctame</h1>
       <div class="container">
-        <form>
+        <div>
           <input type="text" placeholder="Nombre" id="name"/>
           <input type="email" placeholder="Correo" id="email"/>
           <textarea
@@ -227,10 +227,13 @@
             placeholder="Mensaje"
           ></textarea>
           <button type="submit" onclick="contact()">Enviar</button>
-        </form>
+          <span class="error" id="error"></span>
+        </div>
 
         <div class="container-social">
-          <h3>Redes sociales</h3>
+          <h3>Información</h3>
+          <p><span><i class="fa-solid fa-location-dot"></i></span> Caracas, venezuela</p>
+          <a href="https://wa.me/584242929636"><span><i class="fa-solid fa-phone"></i></span> +58 424 292 9636</a>
           <div class="social-media">
             <a href="https://www.facebook.com/sergio.suarezhernandez.5/" target="_blank" rel="noreferrer noopener">
               <i class="fa-brands fa-facebook-f"></i>
@@ -240,6 +243,9 @@
             </a>
             <a href="https://www.linkedin.com/in/sergio-su%C3%A1rez-98266a201/" target="_blank" rel="noreferrer noopener">
               <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/584242929636" target="_blank" rel="noreferrer noopener">
+              <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>
       </div>

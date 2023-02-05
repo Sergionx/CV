@@ -65,26 +65,32 @@ skills.forEach(function(skill){
 })
 
 function contact(){
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
-//   error_message.style.padding = "10px";
-//   var text;
-//   if(name.length < 5){
-//     text = "Please Enter valid Name";
-//     error_message.innerHTML = text;
-//     return false;
-//   }
-//   if(email.indexOf("@") == -1 || email.length < 6){
-//     text = "Please Enter valid Email";
-//     error_message.innerHTML = text;
-//     return false;
-//   }
-//   if(message.length <= 140){
-//     text = "Please Enter More Than 140 Characters";
-//     error_message.innerHTML = text;
-//     return false;
-//   }
-//   alert("Form Submitted Successfully!");
-//   return true;
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const error = document.getElementById("error");
+  let text;
+  // /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  if(name.length < 5){
+    text = "Please Enter valid Name";
+    error.innerHTML = text;
+    error.style.display = "block";
+
+    return false;
+  }
+  if(!email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
+    text = "Please Enter valid Email";
+    error.innerHTML = text;
+    error.style.display = "block";
+    return false;
+  }
+  if(message.length <= 20){
+    text = "Please Enter More Than 20 Characters";
+    error.innerHTML = text;
+    error.styl.display = "block";
+    return false;
+  }
+  alert("Form Submitted Successfully!");
+  error.style.display = "none";
+  return true;
 }
