@@ -83,28 +83,22 @@ body {
   margin-top: 7rem;
   width: 100%;
   height: 80%;
-  background: linear-gradient(
-    to right top,
-    #bc3948,
-    #d95f3f,
-    #ec8934,
-    #f2b630,
-    #ebe443
-  );
+  background: #1e2326;
   display: flex;
+  justify-content: center;
 }
 
 .slider {
-  overflow: hidden;
-  width: 80rem;
-  height: 40rem;
+  width: 800px;
+  height: 500px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .slides {
-  display: flex;
   width: 500%;
-  transition: 1s;
+  height: 500px;
+  display: flex;
 }
 
 .slides input {
@@ -114,15 +108,14 @@ body {
 .slide {
   width: 20%;
   transition: 2s;
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
 }
 
 .slide img {
-  width: 75%;
-  height: auto;
+  width: 800px;
+  height: 500px;
 }
+
+/*css for manual slide navigation*/
 
 .navigation-manual {
   position: absolute;
@@ -140,43 +133,33 @@ body {
   transition: 1s;
 }
 
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  width: 800px;
-  justify-content: center;
-  margin-top: 460px;
-}
-
-.navigation-auto div {
-  border: 2px solid #40d3dc;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child) {
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+.manual-btn:hover {
   background: #40d3dc;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: #40d3dc;
+#radio1:checked ~ .first {
+  margin-left: 0;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: #40d3dc;
+#radio2:checked ~ .first {
+  margin-left: -20%;
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-  background: #40d3dc;
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
 }
 
 /* About Me */
 .about-me {
+
   height: 100%;
   padding: 0 2rem 0 2rem;
   background-color: #fff;
