@@ -1,5 +1,13 @@
 let menuVisible = false;
 function togleMenu(){
+  if(menuVisible){
+    document.getElementById("navbar").classList ="";
+    menuVisible = false;
+  }else{
+    document.getElementById("navbar").classList ="responsive";
+    menuVisible = true;
+  }
+  console.log(document.getElementById("navbar"))
 }
 
 var counter = 1;

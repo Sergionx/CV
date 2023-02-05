@@ -67,6 +67,8 @@ body{
 }
 
 .nav-responsive {
+  color:#fff;
+  padding: 1rem 1.5rem;
   display: none;
   cursor: pointer;
   margin: 0 1rem 0 0;
@@ -505,11 +507,26 @@ body{
 }
 
 @media screen and (max-width:768px){
-  .navbar{
+  nav{
     display: none;
   }
   .nav-responsive{
     display: block;
+  }
+  nav.responsive{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: #252A2E;
+      width: 180px;
+  }
+  nav.responsive ul{
+      display: block !important;
+  }
+  nav.responsive ul li{
+      border-bottom: 1px solid #fff;
+      padding: 10px 0;
   }
 
   .about-me .info p {
